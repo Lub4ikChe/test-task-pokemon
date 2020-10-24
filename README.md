@@ -1,7 +1,7 @@
 ## Install
 
 Donwload the project
-After that use command `yarn` in project root directory to load node_modulse
+After that use command `yarn` in project root directory to load node_modules
 
 ## Available Scripts
 
