@@ -1,12 +1,14 @@
 @import 'pokemon.scss';
 
 .main-content {
+
     padding: 15px 0 30px 0;
     &__inner {
         display: flex;
         justify-content: space-between;
 
         .pokemons-list {
+            position: relative;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
@@ -14,14 +16,75 @@
             height: fit-content;
             margin-right: 60px;
 
+            @media (max-width: 1203px) {
+                justify-content: flex-start;
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+            @media (max-width: 772px) {
+                justify-content: center;
+            }
+
+            @media (max-width: 650px) {
+                width: 50%;
+            }
+
+            @media (max-width: 400px) {
+                width: 35%;
+            }
+
             .no-filtered-items {
+                @media (max-width: 1000px) {
+                    font-size: 24px;
+                }
+                @media (max-width: 500px) {
+                    font-size: 20px;
+                }
+                @media (max-width: 450px) {
+                    font-size: 16px;
+                }
+    
                 font-size: 28px;
                 margin-bottom: 10px;
                 text-align: center;
             }
 
             .load-more-btn {
+
+                @media (max-width: 1203px) {
+                    width: 596px;
+                    left: 0;
+                }
+                @media (max-width: 1139px) {
+                    width: 300px;
+                    left: 8%;
+                }
+                @media (max-width: 772px) {
+                    left: 10%;
+                }
+                @media (max-width: 768px) {
+                    width: 223px;
+                    font-size: 22px;
+                }
+
+                @media (max-width: 629px) {
+                    width: 182px;
+                    left: 19%;
+                    font-size: 19px;
+                }
+
+                @media (max-width: 589px) {
+                    width: 155px;
+                    left: 20%;
+                }
+                @media (max-width: 380px) {
+                    width: 120px;
+                    left: 1%;
+                }
+
                 width: 100%;
+                position: absolute;
+                bottom: -65px;
                 background: blue;
                 color: white;
                 padding: 15px 0;
@@ -42,6 +105,14 @@
 
         .pokemon-selected-view {
             width: 45%;
+
+            @media (max-width: 650px) {
+                width: 50%;
+            }
+            
+            @media (max-width: 400px) {
+                width: 61%;
+            }
         }
     }
 }

@@ -14,9 +14,53 @@
         margin-right: 0;
     }
 
+    @media (max-width: 1203px) {
+        margin-right: 20px;
+        &:nth-child(3n) {
+            margin-right: 20px;
+        }
+    }
+
+    @media (max-width: 650px) {
+        margin-right: 5px;
+        &:nth-child(3n) {
+            margin-right: 5px;
+        }
+        width: 160px;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+
+    @media (max-width: 550px) {
+        margin-right: 0;
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+
+    @media (max-width: 400px) {
+        width: 120px;
+        &:hover {
+            transform: scale(1);
+        }
+    }
+
     &-img {
         cursor: pointer;
+        @media (max-width: 650px) {
+            margin-bottom: 0;
+        }
         img {
+            @media (max-width: 650px) {
+                width: 120px;
+                height: 120px;
+            }
+
+            @media (max-width: 400px) {
+                width: 93px;
+                height: 93px;
+            }
+
             width: 150px;
             height: 150px;
         }
@@ -24,6 +68,12 @@
     }
 
     &-name {
+        @media (max-width: 650px) {
+            font-size: 20px;
+        }
+        @media (max-width: 400px) {
+            font-size: 16px;
+        }
         text-align: center;
         font-size: 22px;
         font-weight: 700;
@@ -31,6 +81,14 @@
     }
 
     &-types {
+        @media (max-width: 650px) {
+            width: 130px;
+            padding: 0;
+        }
+        @media (max-width: 400px) {
+            width: 90px;
+            justify-content: center;
+        }
         display: flex;
         flex-wrap: wrap;
         width: 150px;
@@ -42,9 +100,15 @@
             border: 1px solid;
             color: black;
             margin-bottom: 5px;
-
             &:nth-child(odd){
                 margin-right: 10px;
+            }
+
+            @media (max-width: 400px) {
+                &:nth-child(odd){
+                    margin-right: 0;
+                }
+                margin-right: 0;
             }
 
             &.yellow {
@@ -68,8 +132,25 @@
     position: sticky;
     top: 10%;
 
+    @media (max-width: 650px) {
+       width: 190px;
+       padding: 15px;
+    }
+
+    @media (max-width: 550px) {
+        margin: 0;
+     }
+
     &-img {
+        @media (max-width: 650px) {
+            margin-bottom: 0;
+        }
+
         img {
+            @media (max-width: 650px) {
+                width: 150px;
+                height: 140px;
+            }
             width: 250px;
             height: 200px;
         }
@@ -89,6 +170,9 @@
         }
 
         td {
+            @media (max-width: 650px) {
+                padding: 2px 0;
+            }
             text-align: center;
             padding: 5px 0;
         }
