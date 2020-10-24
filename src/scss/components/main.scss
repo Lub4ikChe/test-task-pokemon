@@ -1,0 +1,47 @@
+@import 'pokemon.scss';
+
+.main-content {
+    padding: 15px 0 30px 0;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+
+        .pokemons-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 55%;
+            height: fit-content;
+            margin-right: 60px;
+
+            .no-filtered-items {
+                font-size: 28px;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+
+            .load-more-btn {
+                width: 100%;
+                background: blue;
+                color: white;
+                padding: 15px 0;
+                text-align: center;
+                border-radius: 10px;
+                font-weight: 700;
+                font-size: 25px;
+                border: 2px solid black;
+                cursor: pointer;
+                outline: none;
+                
+                &:active {
+                    background-color: darken(blue, 12%);
+                    transform: translateY(1px);
+                  }
+            }
+        }
+
+        .pokemon-selected-view {
+            width: 45%;
+        }
+    }
+}
