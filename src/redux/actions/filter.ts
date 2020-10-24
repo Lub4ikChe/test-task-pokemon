@@ -1,6 +1,6 @@
 import { SET_FILTERS } from './../types';
-import { FilterActionTypes } from "../reducers/filterReducer"
-import { SET_FILTER } from "../types"
+import { FilterActionTypes } from '../reducers/filterReducer'
+import { SET_FILTER } from '../types'
 import { ThunkAction } from 'redux-thunk';
 import { RootState } from './../reducers/index';
 import axios from 'axios';

@@ -2,7 +2,7 @@ import { showLoader } from './app';
 import { AppActionTypes } from './../reducers/appReducer';
 import { SELECT_POKEMON, SET_POKEMONS } from './../types';
 import { PokemonsActionTypes } from './../reducers/pokemonsReducer';
-import { IPokemonItem } from "../reducers/pokemonsReducer";
+import { IPokemonItem } from '../reducers/pokemonsReducer';
 import { ThunkAction } from 'redux-thunk';
 import { RootState } from './../reducers/index';
 import axios from 'axios';
