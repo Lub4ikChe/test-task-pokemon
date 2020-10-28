@@ -38,7 +38,7 @@ export const MainContent: React.FC = () => {
                         </div>
                     ) : (
                             <div className="pokemons-list">
-                                {itemToRender.length === 0 &&
+                                {itemToRender.length === 0 && pokemons.length &&
                                     <p className='no-filtered-items'>
                                         There are not any {filterType} pokemons in this chunk, load more please :)
                                     </p>
