@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/test-task-pokemon/static/css/main.c3e4c0f7.chunk.css",
-    "main.js": "/test-task-pokemon/static/js/main.7f945600.chunk.js",
-    "main.js.map": "/test-task-pokemon/static/js/main.7f945600.chunk.js.map",
+    "main.js": "/test-task-pokemon/static/js/main.438ea5a8.chunk.js",
+    "main.js.map": "/test-task-pokemon/static/js/main.438ea5a8.chunk.js.map",
     "runtime-main.js": "/test-task-pokemon/static/js/runtime-main.b1fb303d.js",
     "runtime-main.js.map": "/test-task-pokemon/static/js/runtime-main.b1fb303d.js.map",
     "static/js/2.bf159806.chunk.js": "/test-task-pokemon/static/js/2.bf159806.chunk.js",
     "static/js/2.bf159806.chunk.js.map": "/test-task-pokemon/static/js/2.bf159806.chunk.js.map",
     "index.html": "/test-task-pokemon/index.html",
-    "precache-manifest.0ca6dc87959129df726362311a98efcb.js": "/test-task-pokemon/precache-manifest.0ca6dc87959129df726362311a98efcb.js",
+    "precache-manifest.0bbbdd08c4ce7523862e8638361fa124.js": "/test-task-pokemon/precache-manifest.0bbbdd08c4ce7523862e8638361fa124.js",
     "service-worker.js": "/test-task-pokemon/service-worker.js",
     "static/css/main.c3e4c0f7.chunk.css.map": "/test-task-pokemon/static/css/main.c3e4c0f7.chunk.css.map",
     "static/js/2.bf159806.chunk.js.LICENSE.txt": "/test-task-pokemon/static/js/2.bf159806.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.b1fb303d.js",
     "static/js/2.bf159806.chunk.js",
     "static/css/main.c3e4c0f7.chunk.css",
-    "static/js/main.7f945600.chunk.js"
+    "static/js/main.438ea5a8.chunk.js"
   ]
 }
