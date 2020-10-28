@@ -38,23 +38,23 @@ export const MainContent: React.FC = () => {
                         </div>
                     ) : (
                             <div className="pokemons-list">
-                                {itemToRender.length === 0 ? (
+                                {itemToRender.length === 0 &&
                                     <p className='no-filtered-items'>
                                         There are not any {filterType} pokemons in this chunk, load more please :)
                                     </p>
-                                ) : (
-                                        itemToRender.map((item, index) => {
-                                            return (
-                                                <PokemonItem
-                                                    key={`${item.name}_${index}`}
-                                                    onClickHendler={() => selectPokemon(item)}
-                                                    name={item.name}
-                                                    imgUrl={item.imgUrl}
-                                                    types={item.types}
-                                                />
-                                            )
-                                        }
-                                        ))}
+                                }
+                                {itemToRender.map((item, index) => {
+                                    return (
+                                        <PokemonItem
+                                            key={`${item.name}_${index}`}
+                                            onClickHendler={() => selectPokemon(item)}
+                                            name={item.name}
+                                            imgUrl={item.imgUrl}
+                                            types={item.types}
+                                        />
+                                    )
+                                }
+                                )}
                                 {pokemons.length && pokemons.length < 1050 && <Button
                                     disabled={showLoader}
                                     onClickHendler={loadMorePokemons}
