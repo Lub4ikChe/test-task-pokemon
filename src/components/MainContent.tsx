@@ -38,7 +38,7 @@ export const MainContent: React.FC = () => {
                         </div>
                     ) : (
                             <div className="pokemons-list">
-                                {itemToRender.length === 0 && pokemons.length &&
+                                {itemToRender.length === 0 && pokemons.length !== 0 &&
                                     <p className='no-filtered-items'>
                                         There are not any {filterType} pokemons in this chunk, load more please :)
                                     </p>
@@ -55,14 +55,12 @@ export const MainContent: React.FC = () => {
                                     )
                                 }
                                 )}
-                                {pokemons.length && pokemons.length < 1050 && <Button
+                                {pokemons.length !== 0 && pokemons.length < 1050 && <Button
                                     disabled={showLoader}
                                     onClickHendler={loadMorePokemons}
                                 />}
                             </div>
                         )}
-
-
                     <div className="pokemon-selected-view">
                         {selectedPokemon !== null && <SelectedPokemon {...selectedPokemon} />}
                     </div>
